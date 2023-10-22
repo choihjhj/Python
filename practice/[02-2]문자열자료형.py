@@ -56,3 +56,6 @@ print('Life is too short'.replace('Life','Time')) #Time is too short
 # split() 문자열 나누기
 print("Life is too short".split()) #['Life', 'is', 'too', 'short'], 괄호안에 지정 안해주면 공백or엔터or탭 기준으로 나눔
 print("a:b:c:d".split(':')) #['a', 'b', 'c', 'd']
+
+# capitalize() 첫문자만 대문자로 바꾸기
+print('abc'.capitalize()) #Abc
