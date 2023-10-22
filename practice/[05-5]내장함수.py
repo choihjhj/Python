@@ -39,4 +39,6 @@ print(randint(1,10)) #1부터10사이 아무숫자 나옴
 
 # map()함수 여러개 데이터 한줄로 들어올 때 예:1 2 3 4 5
 s=list(map(int,input().split()))
-a,b=map(int, input().split)
+a,b=map(int, input().split())
+
+# input() 문자열로 저장되니까 int면 int(input())으로 형변환해서 변수에 저장하기
