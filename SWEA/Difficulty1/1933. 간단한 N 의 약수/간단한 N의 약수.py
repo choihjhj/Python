@@ -1,4 +1,6 @@
-t = int(input())
-for i in range(1,t+1):
-    if not t%i:
-        print(i,end=" ")
+n = int(input())
+answer = []
+for i in range(1,n+1) :
+    if n % i == 0 :
+        answer.append(i)
+print(*answer)

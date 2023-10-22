@@ -30,7 +30,12 @@ print(a,c) #[1, 2, 6] [True, False, True, False, False, True]
 
 print(list(range(0, -10, -1))) #[0, -1, -2, -3, -4, -5, -6, -7, -8, -9]
 
-# sorted(리스트) 솔트된결과저장됨 리스트.sort()는 결과저장안됨
+# 리스트등.sort() vs sorted(리스트 등)
+'''
+리스트.sort() 하면 알아서 정렬해서 리스트에 저장되고,
+sorted(리스트) 는 값이 저장 안 되기 때문에
+리스트 = sorted(리스트) 라고 해줘야 한다.
+'''
 
 # randint(a,b) a<=~<=b
 from random import *
