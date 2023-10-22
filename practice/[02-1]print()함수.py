@@ -1,3 +1,5 @@
+''' print() 함수의  +,- 출력 '''
+
 age = 3
 name = "강아지"
 is_asult= age>=3
