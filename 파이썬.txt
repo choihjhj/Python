@@ -23,4 +23,12 @@ for _ in range(3):
     print('hello') 
 
 * NXM 크기의 2차원 리스트를 한번에 초기화할 때, 리스트 컴프리헨션으로 하기
-arr = [[0]*m for _ in range(n)]    
+arr = [[0]*m for _ in range(n)] 
+
+* 리스트에서 특정 값을 가지는 원소를 모두 제거하기
+a=[1,2,3,4,5,5,5]
+remove_set={3,5}
+result=[i for i in a if i not in remove_set] #[1,2,4]
+
+* 메모리를 효율적으로 사용해야할 때 리스트보다 튜플이 좋음
+* 최단 경로 알고리즘에서는 (비용, 노드번호)의 형태로 튜플 자료형을 자주 사용함
