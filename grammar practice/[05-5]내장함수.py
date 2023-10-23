@@ -36,6 +36,11 @@ print(list(range(0, -10, -1))) #[0, -1, -2, -3, -4, -5, -6, -7, -8, -9]
 sorted(리스트) 는 값이 저장 안 되기 때문에
 리스트 = sorted(리스트) 라고 해줘야 한다.
 '''
+# value로 정렬하고 싶을 때-오름차순,내림차순
+arr=[('홍길동',35),('이순신',75),('아무개',50)] 
+result=sorted(arr, key=lambda x: x[1]) #[('홍길동', 35), ('아무개', 50), ('이순신', 75)]
+result=sorted(arr, key=lambda x: x[1], reverse=True) #[('이순신', 75), ('아무개', 50), ('홍길동', 35)]
+
 
 # randint(a,b) a<=~<=b
 from random import *
@@ -47,3 +52,5 @@ s=list(map(int,input().split()))
 a,b=map(int, input().split())
 
 # input() 문자열로 저장되니까 int면 int(input())으로 형변환해서 변수에 저장하기
+# eval() 문자열식을 숫자로 계산해서 결과반환
+print(eval("(3+5)*2")) #30
