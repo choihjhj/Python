@@ -2,6 +2,10 @@
 for 변수 in 리스트(또는 튜플, 문자열):
     수행할_문장1
     수행할_문장2
+
+변수 사용없는 반복문 실행할 땐, 변수대신 _언더바로 쓰기
+for _ in range(3):
+    print('hello')    
 '''
 marks = [90, 25, 67, 45, 80]
 for number in range(len(marks)):

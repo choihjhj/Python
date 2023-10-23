@@ -15,3 +15,12 @@ for문 쓰는 게 실행속도가 적고 간단함.
 예) 주어진 입력 값 양수로 변환해서 리스트에 저장
 s = list(map(lambda x: abs(int(x)), input().split())) 
 s = [abs(int(x)) for x in input().split()]
+예) 짝수만 리스트에 저장
+s = [x for x in input().split() if x%2==0]
+
+*변수 사용없는 반복문 실행할 땐, 변수대신 _언더바로 쓰기
+for _ in range(3):
+    print('hello') 
+
+* NXM 크기의 2차원 리스트를 한번에 초기화할 때, 리스트 컴프리헨션으로 하기
+arr = [[0]*m for _ in range(n)]    
