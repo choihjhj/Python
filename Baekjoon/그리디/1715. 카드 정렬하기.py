@@ -1,3 +1,4 @@
+# 메모리: 37600 kb, 시간: 580 ms, 코드길이: 281 Bytes
 '''골드 4'''
 import sys
 from queue import PriorityQueue
