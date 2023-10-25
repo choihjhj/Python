@@ -37,3 +37,8 @@ arr=[i for i in range(1,11) if i%2==0 ] #1부터 10까지 짝수만 포함하는
 
 # NXM 크기의 2차원 리스트를 한번에 초기화할 때, 리스트 컴프리헨션이 유용함
 arr = [[0]*m for _ in range(n)]
+
+# 요소 위치 찾기 : find() 없으면 -1반환 vs index() 없으면 오류 
+a='hello'
+a.find('o',1,3) #-1
+a.index('o',1,3) #오류발생
