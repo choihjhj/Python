@@ -18,6 +18,9 @@ for plan in plans:
         ny=y+dy[i]
         if nx>n or ny>n or nx<1 or ny<1: continue
         x,y=nx,ny
+    else: # 잘못된 입력은 기본위치 출력하는 예외처리 갠적으로 추가
+        x,y=1,1
+        break
 print(x,y)    
     
 
