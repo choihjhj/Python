@@ -52,6 +52,8 @@ print(' hi '.lstrip()+","+' hi '.rstrip()+','+' hi '.strip()) #hi , hi,hi
 
 # replace() 문자열 바꾸기
 print('Life is too short'.replace('Life','Time')) #Time is too short
+s='abc'
+s=s.replace('a','z') #replace함수는 반환으로 받아서 저장해야 바뀐 문자열이 저장됨!!
 
 # split() 문자열 나누기
 print("Life is too short".split()) #['Life', 'is', 'too', 'short'], 괄호안에 지정 안해주면 공백or엔터or탭 기준으로 나눔

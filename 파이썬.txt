@@ -38,6 +38,8 @@ result=[i for i in a if i not in remove_set] #[1,2,4]
 import sys
 T = int(sys.stdin.readline()) #1개 숫자 입력
 s=list(map(int, sys.stdin.readline().rstrip().split())) #한줄에 여러 숫자 입력
+c=sys.stdin.readline().strip() #top이라고 입력했을 때 '\n'이것도 같이 들어가니까 strip()으로 빼줘야함
+a,b sys.stdin.readline().strip().split()
 
 * value로 정렬하고 싶을 때-오름차순,내림차순
 arr=[('홍길동',35),('이순신',75),('아무개',50)] 
