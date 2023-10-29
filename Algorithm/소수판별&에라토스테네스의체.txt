@@ -22,7 +22,7 @@ print(is_prime_number(7))
 ** 방법2) 제곱근까지만 검사, O(X^1/2) **
 import math
 def is_prime_number(x):
-    for i in range(2,int(math.sqrt(x)+1)):
+    for i in range(2,int(math.sqrt(x))+1): #for i in range(2,int(x**0.5)+1): 라고 해도 됨
         if x%i ==0: return False
     return True    
 print(is_prime_number(6))
@@ -52,18 +52,14 @@ N보다 작거나 같은 모든 소수를 찾을 때 사용할 수 있다.
 
 이렇게 하면 최종 1부터 26까지 모든 소수 (2,3,5,7,11,13,17,19,23)를 찾을 수 있다.
 풀이)
-import math
-n=26
 arr=[True for _ in range(n+1)] #0~26 index가 0~26 숫자 의미, 값은 모두 True로 초기화
 # arr[1]=False          #만약 문제에서 1은 소수가 아니다 라면 arr[1]=False 추가해주기
 
-for i in range(2,int(math.sqrt(n))+1): #2부터 n의 제곱근까지의 모든 수를 확인하며
-    if arr[i] == True: #i가 소수인 경우(남은 수인 경우)
+for i in range(2,int(x**0.5)+1): #2부터 n의 제곱근까지의 모든 수를 확인하며
+    if arr[i] : #i가 소수인 경우(남은 수인 경우)
         #i를 제외한 i의 모든 배수를 지우기
-        j=2 #(곱하기1) 자기 자신 제외 하고 배수들 아래에서 곱하기
-        while i*j <= n:
-            arr[i*j]=False
-            j+=1
+        for j in range(i*2,N+1,i): # 2*i부터 n까지 i의 배수 False로 바꾸기
+            arr[j]=False
 
 for i in range(2,n+1): #모든 소수 출력
     if arr[i]: print(i, end=' ')
