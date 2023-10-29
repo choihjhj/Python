@@ -11,7 +11,8 @@ for i in range(2,int(N**0.5)+1):
         for j in range(i*2,N+1,i):
             arr[j]=False          
 for i in range(M,N+1):
-    if arr[i] :print(i)          
+    if arr[i] :print(i)         
+# M부터 N까지의 소수개수 구하고 싶을 땐, print(arr[M:N+1].count(True))    
 '''
 입력예시)
 3 16
