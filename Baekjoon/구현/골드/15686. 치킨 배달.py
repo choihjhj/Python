@@ -3,6 +3,7 @@
 문제가...이해가..잘 안됨.. 순열조합을 공부해서 이 문제 다시 풀어보기!
 문제링크:https://www.acmicpc.net/problem/15686
 소스링크:https://codesyun.tistory.com/185
+M개를 무작위로 골라서 모든 경우를 찾아야 하기 때문에 완전탐색+dfs 즉, 조합 문제이다.
 '''
 import sys
 from itertools import combinations
