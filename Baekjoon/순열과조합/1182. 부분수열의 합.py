@@ -13,3 +13,10 @@ for i in range(1, n+1):
         if sum(x) == s:
             cnt += 1
 print(cnt)
+'''
+입력예시)
+5 0
+-7 -3 -2 5 8
+출력예시)
+1
+'''
