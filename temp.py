@@ -1,16 +1,11 @@
-sum,cnt,start,end=0,0,0,0
-data=[1,2,3,2,5]
-n,m=5,5 #n데이터개수, m찾고자하는부분합
-while end <= n:
-    if sum == m:
-        cnt += 1
-        sum -= data[start]
-        start += 1
-    elif sum < m:
-        if end < n:
-            sum+=data[end]
+import sys
+n=int(sys.stdin.readline()) #15
+sum,end,cnt=0,0,0
+for start in range(1,n+1):
+    while end<=n and sum<n:
+        sum+=end
         end+=1
-    elif sum>m:
-        sum-=data[start]
-        start+=1
-print(cnt)  #3      
+    if sum==n:
+        cnt+=1
+    sum-=start
+print(cnt) #4           
