@@ -1,5 +1,22 @@
-# 메모리: 32140  kb, 시간: 48 ms, 코드길이: 380 Bytes
+# 메모리: 32140  kb, 시간: 44 ms, 코드길이: 326 Bytes
 '''실버4, 시간제한:0.5초'''
+'''풀이1)'''
+import sys
+n,m=map(int,sys.stdin.readline().split())
+data=list(map(int,sys.stdin.readline().strip().split()))
+end,cnt=0,0
+interval_sum=0
+for start in range(n):
+    while end<n and interval_sum<m:
+        interval_sum+=data[end]
+        end+=1
+    if interval_sum == m:
+        cnt+=1
+    interval_sum-=data[start]
+print(cnt)
+
+# 메모리: 32140  kb, 시간: 48 ms, 코드길이: 380 Bytes
+'''풀이2)'''
 import sys
 n,m=map(int,sys.stdin.readline().split())
 data=list(map(int,sys.stdin.readline().strip().split()))
