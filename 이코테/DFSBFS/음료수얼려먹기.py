@@ -27,7 +27,7 @@ for i in range(n):
         if dfs(i,j):
             result+=1
 print(result)          
-'''
+''' 
 입력예시1)
 4 5
 00110
