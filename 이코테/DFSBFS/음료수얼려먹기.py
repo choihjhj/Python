@@ -1,4 +1,4 @@
-'''난이도1.5, 시간제한:1초
+'''난이도1.5, 시간제한:1초, dfs 재귀로 풀기
 0구멍뚫린부분, 1칸막이
 한번에 만들 수 있는 아이스크림의 개수를 출력하라.
 구현방법)
@@ -13,8 +13,8 @@ def dfs(x,y):
     if graph[x][y]==0:
         graph[x][y]=1
         dfs(x-1,y) #상하좌우
-        dfs(x,y-1)
         dfs(x+1,y)
+        dfs(x,y-1)
         dfs(x,y+1)
         return True
     return False
