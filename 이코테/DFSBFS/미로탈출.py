@@ -1,3 +1,4 @@
+'''BFS 로 다음 위치 1일 때 마다  다음위치 큐에 넣고, 그래프에 현재위치+1 하면서 이동회수 카운트'''
 import sys
 from collections import deque
 def bfs(x,y):
